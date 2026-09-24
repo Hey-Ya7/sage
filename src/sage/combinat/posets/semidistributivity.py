@@ -1,7 +1,7 @@
 r"""
 The fundamental theorem of finite semidistributive lattices
 
-This is a result shown in [RST2019]_, stating that a finite lattice is
+This is a result shown in [RST2024]_, stating that a finite lattice is
 semidistributive if and only if it is isomorphic to some lattice of
 maximal orthogonal pairs of a finite two-acyclic factorization system.
 
@@ -21,7 +21,7 @@ def right_orthogonal(G, X):
     the set of vertices of `G` that are not in `X` or out-neighbors of any vertices
     in `X`.
 
-    This set is defined on page 3 of [RST2019]_, but left nameless - we have opted
+    This set is defined on page 3 of [RST2024]_, but left nameless - we have opted
     for "right orthogonal" as a placeholder term.
 
     INPUT:
@@ -71,7 +71,7 @@ def right_orthogonal(G, X):
 
     REFERENCE:
 
-    - [RST2019]_
+    - [RST2024]_
 
     TESTS:
 
@@ -102,7 +102,7 @@ def left_orthogonal(G, X):
     the set of vertices of `G` that are not in `X` or in-neighbors of any vertices
     in `X`.
 
-    This set is defined on page 3 of [RST2019]_, but left nameless - we have opted
+    This set is defined on page 3 of [RST2024]_, but left nameless - we have opted
     for "left orthogonal" as a placeholder term.
 
     INPUT:
@@ -152,7 +152,7 @@ def left_orthogonal(G, X):
 
     REFERENCE:
 
-    - [RST2019]_
+    - [RST2024]_
 
     TESTS:
 
@@ -257,9 +257,9 @@ def maximal_orthogonal_pairs_lattice(G, labels="pair"):
 
     REFERENCES:
 
-    - [RST2019]_
+    - [RST2024]_
 
-    - [Muh2021]_
+    - [Muhle2021]_
 
     - [TW2018]_
 
@@ -343,7 +343,7 @@ def surjective_edges(G, loops=False):
 
     REFERENCE:
 
-    - [RST2019]_
+    - [RST2024]_
 
     TESTS::
 
@@ -397,7 +397,7 @@ def injective_edges(G, loops=False):
 
     REFERENCE:
 
-    - [RST2019]_
+    - [RST2024]_
 
     TESTS::
 
@@ -447,7 +447,7 @@ def is_two_acyclic_factorization_system(G, certificate=False):
         brick condition.
 
     Two-acyclic factorization systems play a key role in the Fundamental Theorem of
-    Finite Semidistributive Lattices: as shown in [RST2019]_, checking whether a
+    Finite Semidistributive Lattices: as shown in [RST2024]_, checking whether a
     DiGraph forms a two-acyclic factorization system is equivalent to checking if
     the lattice of maximal orthogonal pairs is semidistributive.
 
@@ -501,7 +501,7 @@ def is_two_acyclic_factorization_system(G, certificate=False):
         ....:                                                                     # so no factorization exists for (1, 0)
         (False, ((1, 0), 'not_factorization_system'))
 
-    Example of a two-acyclic factorization system, from Figure 1. of [RST2019]_ ::
+    Example of a two-acyclic factorization system, from Figure 1. of [RST2024]_ ::
 
         sage: G = DiGraph([('b', 'a'), ('c', 'b'), ('c', 'a'), ('d', 'c'), ('e', 'd'), ('e', 'c'),
         ....:              ('e', 'b'), ('f', 'e'), ('f', 'c'), ('f', 'b'), ('f', 'a'), ('g', 'f'),
@@ -525,7 +525,7 @@ def is_two_acyclic_factorization_system(G, certificate=False):
 
     REFERENCE:
 
-    - [RST2019]_
+    - [RST2024]_
 
     TESTS::
 
